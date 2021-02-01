@@ -1,13 +1,111 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #DBE1E6;
+  color: rgb(41, 41, 41);
+  text-transform: uppercase;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  text-align: center;
+  height: 100px;
+  background: #36494E;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #cbd1d6;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+nav li {
+  padding: 30px 0;
+  border-bottom: 1px solid rgb(165, 165, 165);
+  text-align: center;
+}
+
+nav li:last-of-type {
+  border-bottom: none;
+}
+
+main li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+}
+
+footer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #36494E;
+  color: #fff;
+  border-top: 3px solid #cbd1d6;
+}
+
+footer span {
+  padding: 5px 20px;
+}
+
+.recipebook {
+  background: #fff;
+  margin: 50px auto;
+  width: 800px;
+  box-shadow: 0 2px 2px #63676e;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.layout {
+  display: flex;
+}
+
+.nav {
+  flex-basis: 25%;
+  background: rgb(248, 248, 248);
+  border-right: 2px solid rgb(165, 165, 165);
+}
+
+.main {
+  flex-basis: 75%;
+  padding: 20px 40px;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 425px;
+}
+
+.recipe {
+  padding: 15px 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  cursor: pointer;
+}
+
+.cocktail-list-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.info {
+  color: rgb(185, 185, 185);
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.lowercase {
+  text-transform: capitalize;
 }
