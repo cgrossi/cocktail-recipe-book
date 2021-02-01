@@ -109,3 +109,17 @@ footer span {
 .lowercase {
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 900px) {
+  .recipebook {
+    width: 80vw;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+
+  nav li:last-of-type {
+    border-bottom: 1px solid rgb(165, 165, 165);
+  }
+}
